@@ -1,1 +1,1 @@
-# Jest_testing_practice
+Small project to get started with Jest for unit tests.
