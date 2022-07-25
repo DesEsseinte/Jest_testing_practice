@@ -1,3 +1,4 @@
-const ceaserCipher = require ('../code/ceaserCipher')
+const caesarCipher = require ('../code/caesarCipher')
 
 
+test("caserCipher")
