@@ -30,4 +30,4 @@ function myFactory (firstName,years){
 const matt = myFactory('Matt', 41);
 const victoria = myFactory('Victoria', 46)
 
-module.exports = matt
+module.exports =  {matt:matt,victoria:victoria};

@@ -1,16 +1,34 @@
 const instance = require('../code/factory');
 
+const matt = instance.matt
+const victoria = instance.victoria
 
+//matt obj
 test("myFactory gets age", () => {
-	expect(instance.getAge()).toBe(41)
+	expect(matt.getAge()).toBe(41)
 });
 test("myFactory sets age", () =>{
-	instance.setAge(42)
-	expect(instance.getAge()).toBe(42)
+	matt.setAge(42)
+	expect(matt.getAge()).toBe(42)
 });
 test("myFactory sends message with no arguments passed in.", () =>{
-	expect(instance.sendMessage()).toBe("Hello Matt.")
+	expect(matt.sendMessage()).toBe("Hello Matt.")
 });
 test("myFactory sends bespoke message with argument passed in.", () =>{
-	expect(instance.sendMessage("I love you.")).toBe("Hello Matt. I love you.")
+	expect(matt.sendMessage("I love you.")).toBe("Hello Matt. I love you.")
+});
+
+//victoria obj
+test("myFactory gets age", () => {
+	expect(victoria.getAge()).toBe(46)
+});
+test("myFactory sets age", () =>{
+	victoria.setAge(47)
+	expect(victoria.getAge()).toBe(47)
+});
+test("myFactory sends message with no arguments passed in.", () =>{
+	expect(victoria.sendMessage()).toBe("Hello Victoria.")
+});
+test("myFactory sends bespoke message with argument passed in.", () =>{
+	expect(victoria.sendMessage("I love you.")).toBe("Hello Victoria. I love you.")
 });
