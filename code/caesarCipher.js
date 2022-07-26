@@ -29,3 +29,7 @@ function caesarCipher (word){
 }
 
 module.exports = caesarCipher;
+
+//make use of RegEx
+// allow user to choose shifting number
+// create function which deciphers encrypted word.
