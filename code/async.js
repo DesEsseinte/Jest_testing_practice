@@ -2,7 +2,8 @@ const asyncCode = () =>{
 
 	const myPromise = new Promise((resolve,reject)=>{
 		setTimeout(()=>{
-			resolve("hello")
+			resolve("hello");
+			reject("error");
 		},2000)
 	});
 	
