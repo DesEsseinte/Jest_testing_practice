@@ -19,7 +19,7 @@ function caesarCipher (word){
 				}else{
 
 					encryptedWord += cipher[index+1];
-
+					break;
 				}			
 			}
 		}
